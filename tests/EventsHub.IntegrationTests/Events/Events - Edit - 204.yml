@@ -1,16 +1,16 @@
 info:
-  name: Events - Create - 200
+  name: Events - Edit - 204
   type: http
-  seq: 4
+  seq: 5
 
 http:
-  method: POST
+  method: PUT
   url: "{{baseUrl}}/events"
   body:
     type: json
     data: |-
       {
-        "id": "{{$guid}}",
+        "id": "0f696583-c045-44cd-8d33-5120c78afa8d",
         "title": "{{$randomCatchPhrase}}",
         "date": "{{$randomDateFuture}}",
         "description": "{{$randomLoremParagraph}}",
