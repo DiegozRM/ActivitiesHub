@@ -15,9 +15,9 @@ namespace EventsHub.Api.Controllers
     {
         [HttpGet]
         [ProducesResponseType(typeof(IReadOnlyList<Event>), StatusCodes.Status200OK)]
-        public async Task<ActionResult<List<Event>>> GetEventsAsync()
+        public async Task<ActionResult<List<Event>>> GetEventsAsync(CancellationToken cancellationToken)
         {
-            return await Mediator.Send(new GetEventList.Query());
+            return await Mediator.Send(new GetEventList.Query(), cancellationToken);
         }
 
         [HttpGet("{id}")]
