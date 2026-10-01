@@ -1,30 +1,30 @@
-# Graph Report - EventsHub  (2026-09-30)
+# Graph Report - EventsHub  (2026-10-01)
 
 ## Corpus Check
-- 65 files · ~45,086 words
+- 71 files · ~57,772 words
 - Verdict: corpus is large enough that graph structure adds value.
-- Unclassified: 9 file(s) not represented in the graph (top: (none) 6, .css 2, .nswag 1)
+- Unclassified: 11 file(s) not represented in the graph (top: (none) 9, .nswag 1, .css 1)
 
 ## Summary
-- 476 nodes · 608 edges · 45 communities (37 shown, 8 thin omitted)
+- 491 nodes · 619 edges · 47 communities (36 shown, 11 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 19 edges (avg confidence: 0.9)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `abb9588e`
+- Built from commit: `82f5995c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - Generated API Clients
 - Backend Layer Dependencies
-- React Frontend Tooling
+- package.json
 - Dotnet Project Dependencies
 - Architecture and Testing Principles
-- Event Controllers and Tests
+- .GetEventsAsync
 - Application TypeScript Configuration
 - Frontend Development Dependencies
-- Generated API Models
+- openspec-explore/SKILL.md
 - Node TypeScript Configuration
 - Event Domain Model
 - OpenAPI Generation Workflow
@@ -33,7 +33,6 @@
 - Event Command Handlers
 - Database Seeding and Fixtures
 - API Launch Configuration
-- Controller Mediation and Weather
 - Documentation Host Configuration
 - Weather Forecast Model
 - Git Collaboration Practices
@@ -58,9 +57,7 @@
 - Project Course Context
 - React Activity Types
 - Favicon Vector Asset
-- Layered Hero Illustration
-- React Vector Asset
-- Vite Vector Asset
+- web_src_index
 
 ## God Nodes (most connected - your core abstractions)
 1. `Event` - 25 edges
@@ -70,8 +67,8 @@
 5. `AppDbContext` - 13 edges
 6. `EventsHub.Persistence` - 12 edges
 7. `EventsHub.Domain` - 9 edges
-8. `EventsController` - 8 edges
-9. `Handler` - 8 edges
+8. `Handler` - 8 edges
+9. `EventsController` - 8 edges
 10. `Local baseUrl https://localhost:5001/api/v1` - 7 edges
 
 ## Surprising Connections (you probably didn't know these)
@@ -89,15 +86,15 @@
 ## Import Cycles
 - None detected.
 
-## Communities (45 total, 8 thin omitted)
+## Communities (47 total, 11 thin omitted)
 
 ### Community 1 - "Backend Layer Dependencies"
 Cohesion: 0.07
 Nodes (35): automapper, EventsHub.Domain, EventsHub.Persistence.Migrations, EventsHub.Application.Events.Queries, EventsHub.Api.Controllers, EventsHub.Application.Events.Commands, EventsHub.UnitTests, EventsHub.Persistence (+27 more)
 
-### Community 2 - "React Frontend Tooling"
-Cohesion: 0.07
-Nodes (36): axios, @babel/core, babel-plugin-react-compiler, @emotion/react, @emotion/styled, eslint, @eslint/js, eslint-plugin-react-hooks (+28 more)
+### Community 2 - "package.json"
+Cohesion: 0.05
+Nodes (45): axios, @babel/core, babel-plugin-react-compiler, @emotion/react, @emotion/styled, eslint, @eslint/js, eslint-plugin-react-hooks (+37 more)
 
 ### Community 3 - "Dotnet Project Dependencies"
 Cohesion: 0.07
@@ -107,9 +104,9 @@ Nodes (26): AutoMapper (13.0.1), coverlet.collector (6.0.4), MediatR (14.2.0), M
 Cohesion: 0.08
 Nodes (31): Bruno integration tests, EventsHub.Api, EventsHub.Application, EventsHub.Domain, EventsHub.Persistence, NUnit tests, React TypeScript frontend, Repository guidelines (+23 more)
 
-### Community 5 - "Event Controllers and Tests"
-Cohesion: 0.16
-Nodes (15): ActionResult, HttpDelete, HttpPost, HttpPut, NotFoundObjectResult, ProducesResponseType, SetUp, CancellationToken (+7 more)
+### Community 5 - ".GetEventsAsync"
+Cohesion: 0.10
+Nodes (23): ActionResult, ControllerBase, HttpDelete, HttpPost, HttpPut, IEnumerable, IMediator, NotFoundObjectResult (+15 more)
 
 ### Community 6 - "Application TypeScript Configuration"
 Cohesion: 0.10
@@ -119,9 +116,9 @@ Nodes (19): compilerOptions, allowArbitraryExtensions, allowImportingTsExtension
 Cohesion: 0.11
 Nodes (18): devDependencies, @babel/core, babel-plugin-react-compiler, eslint, @eslint/js, eslint-plugin-react-hooks, eslint-plugin-react-refresh, globals (+10 more)
 
-### Community 8 - "Generated API Models"
-Cohesion: 0.22
-Nodes (9): dependencies, axios, @emotion/react, @emotion/styled, @fontsource/roboto, @mui/icons-material, @mui/material, react (+1 more)
+### Community 8 - "openspec-explore/SKILL.md"
+Cohesion: 0.17
+Nodes (11): Check for context, Ending Discovery, Guardrails, Handling Different Entry Points, OpenSpec Awareness, Planning a Change, The Stance, What You Don't Have To Do (+3 more)
 
 ### Community 9 - "Node TypeScript Configuration"
 Cohesion: 0.12
@@ -154,10 +151,6 @@ Nodes (7): OneTimeSetUp, OneTimeTearDown, Task, DbInitializer, Task, GlobalTestS
 ### Community 16 - "API Launch Configuration"
 Cohesion: 0.20
 Nodes (9): ASPNETCORE_ENVIRONMENT, applicationUrl, commandName, dotnetRunMessages, environmentVariables, launchBrowser, profiles, https (+1 more)
-
-### Community 17 - "Controller Mediation and Weather"
-Cohesion: 0.22
-Nodes (8): ControllerBase, IEnumerable, IMediator, EventsHubBaseController, Mediator, HttpGet, WeatherForecastController, WeatherForecast
 
 ### Community 18 - "Documentation Host Configuration"
 Cohesion: 0.22
@@ -240,24 +233,24 @@ Cohesion: 0.50
 Nodes (4): Audio transcription, Domain prompt, Media transcription, Whisper
 
 ## Knowledge Gaps
-- **224 isolated node(s):** `Mediator`, `net10.0`, `Microsoft.AspNetCore.OpenApi (10.0.11)`, `Microsoft.EntityFrameworkCore.Design (10.0.11)`, `Microsoft.NET.Sdk.Web` (+219 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 273 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **8 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **231 isolated node(s):** `The Stance`, `Planning a Change`, `What You Might Do`, `Check for context`, `When no change exists` (+226 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 286 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `Event` connect `Event Domain Model` to `Database Context`, `Event Controllers and Tests`, `Event List Query`, `Event Editing Handler`, `Event Details Query`, `Event Command Contracts`?**
-  _High betweenness centrality (0.038) - this node is a cross-community bridge._
+- **Why does `Event` connect `Event Domain Model` to `Database Context`, `.GetEventsAsync`, `Event List Query`, `Event Editing Handler`, `Event Details Query`, `Event Command Contracts`?**
+  _High betweenness centrality (0.036) - this node is a cross-community bridge._
 - **Why does `AppDbContext` connect `Database Context` to `Backend Layer Dependencies`, `Event Domain Model`, `Event Command Handlers`, `Database Seeding and Fixtures`, `Event List Query`, `Event Editing Handler`, `Event Details Query`?**
-  _High betweenness centrality (0.032) - this node is a cross-community bridge._
-- **Why does `EventsController` connect `Event Controllers and Tests` to `Backend Layer Dependencies`, `Controller Mediation and Weather`?**
-  _High betweenness centrality (0.018) - this node is a cross-community bridge._
-- **What connects `Mediator`, `net10.0`, `Microsoft.AspNetCore.OpenApi (10.0.11)` to the rest of the system?**
-  _224 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.030) - this node is a cross-community bridge._
+- **Why does `EventsController` connect `.GetEventsAsync` to `Backend Layer Dependencies`?**
+  _High betweenness centrality (0.017) - this node is a cross-community bridge._
+- **What connects `The Stance`, `Planning a Change`, `What You Might Do` to the rest of the system?**
+  _231 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Backend Layer Dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.06948051948051948 - nodes in this community are weakly interconnected._
-- **Should `React Frontend Tooling` be split into smaller, more focused modules?**
-  _Cohesion score 0.06585365853658537 - nodes in this community are weakly interconnected._
+- **Should `package.json` be split into smaller, more focused modules?**
+  _Cohesion score 0.05142857142857143 - nodes in this community are weakly interconnected._
 - **Should `Dotnet Project Dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.07386363636363637 - nodes in this community are weakly interconnected._

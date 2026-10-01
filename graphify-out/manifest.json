@@ -227,23 +227,17 @@
     "ast_hash": "62784e7f997037a71956b6c89911f27d",
     "semantic_hash": "62784e7f997037a71956b6c89911f27d"
   },
-  "web/src/App.tsx": {
-    "mtime": 1789047480.9652848,
-    "seen": 1790774892.296794,
-    "ast_hash": "29fc35a2f380d866400b7e5a113b8360",
-    "semantic_hash": "29fc35a2f380d866400b7e5a113b8360"
-  },
   "web/src/lib/types/index.d.ts": {
-    "mtime": 1788960190.0909772,
-    "seen": 1790774892.2967954,
+    "mtime": 1790872383.84777,
+    "seen": 1790872704.0255804,
     "ast_hash": "e555b49d0f2f8854d95f272b4c7405dd",
     "semantic_hash": "e555b49d0f2f8854d95f272b4c7405dd"
   },
   "web/src/main.tsx": {
-    "mtime": 1788961463.778649,
-    "seen": 1790774892.2967973,
-    "ast_hash": "253dfae080a3cf052a2cd4edbafd042a",
-    "semantic_hash": "253dfae080a3cf052a2cd4edbafd042a"
+    "mtime": 1790872551.5968268,
+    "seen": 1790872704.0255842,
+    "ast_hash": "4adac16d5fbb75b69855e612b3cd5fb9",
+    "semantic_hash": ""
   },
   "web/tsconfig.app.json": {
     "mtime": 1788794337.6951995,
@@ -473,22 +467,52 @@
     "ast_hash": "21c7473c592c67dc87223d49892c8f0a",
     "semantic_hash": "21c7473c592c67dc87223d49892c8f0a"
   },
-  "web/src/assets/hero.png": {
-    "mtime": 1788794337.6913965,
-    "seen": 1790774892.2968674,
-    "ast_hash": "aead493361b27e7510691c5d7072dfc1",
-    "semantic_hash": "aead493361b27e7510691c5d7072dfc1"
+  "web/src/app/layout/App.tsx": {
+    "mtime": 1789047480.9652848,
+    "seen": 1790872704.0255754,
+    "ast_hash": "29fc35a2f380d866400b7e5a113b8360",
+    "semantic_hash": ""
   },
-  "web/src/assets/react.svg": {
-    "mtime": 1788794337.6913965,
-    "seen": 1790774892.296869,
-    "ast_hash": "f0402b67b6ce880f65666bb49e841696",
-    "semantic_hash": "f0402b67b6ce880f65666bb49e841696"
+  ".agents/skills/openspec-apply-change/SKILL.md": {
+    "mtime": 1790775675.8289056,
+    "seen": 1790872704.025601,
+    "ast_hash": "68cb9d52bdbbe666c964257da4c2307e",
+    "semantic_hash": ""
   },
-  "web/src/assets/vite.svg": {
-    "mtime": 1788794337.6913965,
-    "seen": 1790774892.296871,
-    "ast_hash": "6d5180a782d64c8cf51ba01c2a2184d8",
-    "semantic_hash": "6d5180a782d64c8cf51ba01c2a2184d8"
+  ".agents/skills/openspec-archive-change/SKILL.md": {
+    "mtime": 1790775675.8445666,
+    "seen": 1790872704.0256042,
+    "ast_hash": "a99a60d8779c663c960bc842c27b5110",
+    "semantic_hash": ""
+  },
+  ".agents/skills/openspec-explore/SKILL.md": {
+    "mtime": 1790775675.8289056,
+    "seen": 1790872704.0256073,
+    "ast_hash": "fbbe0f71b077cdf3fed4f9d57a8b7743",
+    "semantic_hash": ""
+  },
+  ".agents/skills/openspec-propose/SKILL.md": {
+    "mtime": 1790775675.8496315,
+    "seen": 1790872704.02561,
+    "ast_hash": "bc821f7fd06f35a3fc3d43a1176c5b75",
+    "semantic_hash": ""
+  },
+  ".agents/skills/openspec-sync-specs/SKILL.md": {
+    "mtime": 1790775675.8289056,
+    "seen": 1790872704.025613,
+    "ast_hash": "617e78a7b6512d4816cf0840c3f3adbb",
+    "semantic_hash": ""
+  },
+  ".agents/skills/openspec-update-change/SKILL.md": {
+    "mtime": 1790775675.8289056,
+    "seen": 1790872704.0256157,
+    "ast_hash": "4458314577f283cee88e4124cd8a630a",
+    "semantic_hash": ""
+  },
+  "openspec/config.yaml": {
+    "mtime": 1790775675.8533764,
+    "seen": 1790872704.0256839,
+    "ast_hash": "a88f7d80935e1a432dc9b5affe49eb27",
+    "semantic_hash": ""
   }
 }

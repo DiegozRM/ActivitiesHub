@@ -432,6 +432,6 @@ FodyWeavers.xsd
 *.db-shm
 *.db-wal
 
-# Graphify local cache and usage tracking
-graphify-out/cost.json
-graphify-out/cache/
+# Graphify generated outputs and local tool version
+/graphify-out/
+/.codex/skills/graphify/.graphify_version
