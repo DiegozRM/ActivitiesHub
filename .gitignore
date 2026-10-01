@@ -431,3 +431,7 @@ FodyWeavers.xsd
 *.db
 *.db-shm
 *.db-wal
+
+# Graphify local cache and usage tracking
+graphify-out/cost.json
+graphify-out/cache/
