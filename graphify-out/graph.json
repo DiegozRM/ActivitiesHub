@@ -725,7 +725,19 @@
       "file_type": "code",
       "norm_label": "app()",
       "source_file": "web/src/app/layout/App.tsx",
-      "source_location": "L5"
+      "source_location": "L6"
+    },
+    {
+      "id": "web_src_app_layout_navbar_navbar",
+      "label": "NavBar()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "navbar()",
+      "source_file": "web/src/app/layout/NavBar.tsx",
+      "source_location": "L4"
     },
     {
       "id": "src_eventshub_application_events_queries_geteventlist_eventshub_application_events_queries_handler_handle",
@@ -2425,6 +2437,17 @@
       "file_type": "code",
       "norm_label": "app.tsx",
       "source_file": "web/src/app/layout/App.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "web_src_app_layout_navbar",
+      "label": "NavBar.tsx",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "navbar.tsx",
+      "source_file": "web/src/app/layout/NavBar.tsx",
       "source_location": "L1"
     },
     {
@@ -6775,6 +6798,18 @@
       "type": "external"
     },
     {
+      "id": "web_src_app_layout_styles",
+      "label": "web_src_app_layout_styles",
+      "_origin": "semantic",
+      "community": 2,
+      "community_name": "package.json",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "web_src_app_layout_styles",
+      "source_file": "",
+      "type": "external"
+    },
+    {
       "id": "web_src_index",
       "label": "web_src_index",
       "_origin": "semantic",
@@ -6783,17 +6818,6 @@
       "external": true,
       "file_type": "concept",
       "norm_label": "web_src_index",
-      "source_file": "",
-      "type": "external"
-    },
-    {
-      "id": "web_src_app_layout_styles",
-      "label": "web_src_app_layout_styles",
-      "community": 2,
-      "community_name": "package.json",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "web_src_app_layout_styles",
       "source_file": "",
       "type": "external"
     }
@@ -7064,6 +7088,18 @@
       "context": "call",
       "source_file": "tests/EventsHub.UnitTests/GlobalTestSetup.cs",
       "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "web_src_app_layout_app_app",
+      "target": "web_src_app_layout_navbar_navbar",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "web/src/app/layout/App.tsx",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -9605,6 +9641,18 @@
       "weight": 1.0
     },
     {
+      "source": "web_src_app_layout_app",
+      "target": "web_src_app_layout_navbar_navbar",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "web/src/app/layout/App.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
       "source": "web_src_main",
       "target": "web_src_app_layout_app_app",
       "relation": "imports",
@@ -9722,6 +9770,42 @@
       "context": "import",
       "source_file": "web/src/app/layout/App.tsx",
       "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "web_src_app_layout_app",
+      "target": "web_src_app_layout_navbar",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "web/src/app/layout/App.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "web_src_app_layout_navbar",
+      "target": "ref_mui_icons_material",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "web/src/app/layout/NavBar.tsx",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "web_src_app_layout_navbar",
+      "target": "ref_mui_material",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "web/src/app/layout/NavBar.tsx",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -11873,7 +11957,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/src/app/layout/App.tsx",
-      "source_location": "L5",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "web_src_app_layout_navbar",
+      "target": "web_src_app_layout_navbar_navbar",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "web/src/app/layout/NavBar.tsx",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -14543,5 +14638,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "82f5995cbb2027238b46467462acc5c9de87effa"
+  "built_at_commit": "9a7bfba349cf190acc00a0bc8212801a5bef7af1"
 }

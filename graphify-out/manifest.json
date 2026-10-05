@@ -468,9 +468,9 @@
     "semantic_hash": "21c7473c592c67dc87223d49892c8f0a"
   },
   "web/src/app/layout/App.tsx": {
-    "mtime": 1789047480.9652848,
-    "seen": 1790872704.0255754,
-    "ast_hash": "29fc35a2f380d866400b7e5a113b8360",
+    "mtime": 1790873810.5480492,
+    "seen": 1790874311.7913504,
+    "ast_hash": "7520ef1d8412ec337f41530fa6953f79",
     "semantic_hash": ""
   },
   ".agents/skills/openspec-apply-change/SKILL.md": {
@@ -513,6 +513,12 @@
     "mtime": 1790775675.8533764,
     "seen": 1790872704.0256839,
     "ast_hash": "a88f7d80935e1a432dc9b5affe49eb27",
+    "semantic_hash": ""
+  },
+  "web/src/app/layout/NavBar.tsx": {
+    "mtime": 1790873775.4934409,
+    "seen": 1790874311.7913542,
+    "ast_hash": "783ff4e801c7f53763690ee6431b03a5",
     "semantic_hash": ""
   }
 }

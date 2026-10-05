@@ -1,17 +1,17 @@
 # Graph Report - EventsHub  (2026-10-01)
 
 ## Corpus Check
-- 71 files · ~57,772 words
+- 72 files · ~57,838 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 11 file(s) not represented in the graph (top: (none) 9, .nswag 1, .css 1)
 
 ## Summary
-- 491 nodes · 619 edges · 47 communities (36 shown, 11 thin omitted)
+- 493 nodes · 625 edges · 47 communities (36 shown, 11 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 19 edges (avg confidence: 0.9)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `82f5995c`
+- Built from commit: `9a7bfba3`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -94,7 +94,7 @@ Nodes (35): automapper, EventsHub.Domain, EventsHub.Persistence.Migrations, Even
 
 ### Community 2 - "package.json"
 Cohesion: 0.05
-Nodes (45): axios, @babel/core, babel-plugin-react-compiler, @emotion/react, @emotion/styled, eslint, @eslint/js, eslint-plugin-react-hooks (+37 more)
+Nodes (46): axios, @babel/core, babel-plugin-react-compiler, @emotion/react, @emotion/styled, eslint, @eslint/js, eslint-plugin-react-hooks (+38 more)
 
 ### Community 3 - "Dotnet Project Dependencies"
 Cohesion: 0.07
@@ -233,24 +233,24 @@ Cohesion: 0.50
 Nodes (4): Audio transcription, Domain prompt, Media transcription, Whisper
 
 ## Knowledge Gaps
-- **231 isolated node(s):** `The Stance`, `Planning a Change`, `What You Might Do`, `Check for context`, `When no change exists` (+226 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 286 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **230 isolated node(s):** `Activity`, `EventsHub.UnitTests`, `EventsHub.UnitTests.Controllers`, `Category`, `City` (+225 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 285 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Event` connect `Event Domain Model` to `Database Context`, `.GetEventsAsync`, `Event List Query`, `Event Editing Handler`, `Event Details Query`, `Event Command Contracts`?**
-  _High betweenness centrality (0.036) - this node is a cross-community bridge._
+  _High betweenness centrality (0.035) - this node is a cross-community bridge._
 - **Why does `AppDbContext` connect `Database Context` to `Backend Layer Dependencies`, `Event Domain Model`, `Event Command Handlers`, `Database Seeding and Fixtures`, `Event List Query`, `Event Editing Handler`, `Event Details Query`?**
   _High betweenness centrality (0.030) - this node is a cross-community bridge._
 - **Why does `EventsController` connect `.GetEventsAsync` to `Backend Layer Dependencies`?**
   _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **What connects `The Stance`, `Planning a Change`, `What You Might Do` to the rest of the system?**
-  _231 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `Activity`, `EventsHub.UnitTests`, `EventsHub.UnitTests.Controllers` to the rest of the system?**
+  _230 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Backend Layer Dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.06948051948051948 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.05142857142857143 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05203619909502263 - nodes in this community are weakly interconnected._
 - **Should `Dotnet Project Dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.07386363636363637 - nodes in this community are weakly interconnected._
