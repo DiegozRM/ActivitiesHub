@@ -1,5 +1,4 @@
 import { Button, Card, CardActions, CardContent, Chip, Typography } from '@mui/material';
-import React from 'react'
 
 type Props = {
     activity: Activity;
