@@ -1,26 +1,42 @@
-import { Box, Button, Paper, TextField, Typography } from "@mui/material";
+import {Box, Button, Paper, TextField, Typography} from "@mui/material";
+import type { FormEvent } from "react";
 
-type Props = {
-    activity?: Activity;
+type Props={
     closeForm: () => void;
+    activity?: Activity;
+    submitForm: (activity: Activity) => void;
 }
+export default function ActivityForm({ closeForm, activity, submitForm }: Props) {
+    const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        console.log(event);
 
-export default function ActivityForm({activity, closeForm}: Props) {
-    return (
-        <Paper sx={{ borderRadius: 3, padding: 3 }}>
+        const formData = new FormData(event.currentTarget);
+        const data: {[key:string]: FormDataEntryValue} = {};
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+
+        if (activity) data.id = activity.id;
+
+        submitForm(data as unknown as Activity);
+    }
+
+    return(
+        <Paper sx={{borderRadius: 3, padding: 3}}>
             <Typography variant="h5" gutterBottom color="primary">
-                {activity ? 'Edit activity' : 'Create activity'}
+                Create Activity
             </Typography>
-            <Box component="form" sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
-                <TextField label="Title" defaultValue={activity?.title ?? ''} />
-                <TextField label="Description" defaultValue={activity?.description ?? ''} multiline rows={3}/>
-                <TextField label="Category" defaultValue={activity?.category ?? ''}/>
-                <TextField label="Date" defaultValue={activity?.date?.split('T')[0] ?? ''} type="date" slotProps={{ inputLabel: { shrink: true } }}/>
-                <TextField label="City" defaultValue={activity?.city ?? ''}/>
-                <TextField label="Venue" defaultValue={activity?.venue ?? ''}/>
-                <Box sx={{display: 'flex', justifyContent: 'end', gap: 3}}>
+            <Box component="form" onClick={handleSubmit} sx={{display:'flex', flexDirection:'column', gap: 3}}>
+                <TextField name="title" label="Title" defaultValue={activity?.title} />
+                <TextField name="description" label="Description" multiline rows={3} defaultValue={activity?.description} />
+                <TextField name="category" label="Category" defaultValue={activity?.category} />
+                <TextField name="date" label="Date" type="date" defaultValue={activity?.date} />
+                <TextField name="city" label="City" defaultValue={activity?.city} />
+                <TextField name="venue" label="Venue" defaultValue={activity?.venue} />
+                <Box sx={{display: 'flex', justifyContent:'end', gap: 3}}>
                     <Button onClick={closeForm} color="inherit">Cancel</Button>
-                    <Button color="success">Submit</Button>
+                    <Button type="submit" color="success">Submit</Button>
                 </Box>
             </Box>
         </Paper>
