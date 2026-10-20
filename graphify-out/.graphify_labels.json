@@ -1,7 +1,7 @@
 {
   "0": "Generated API Clients",
   "1": "Backend Layer Dependencies",
-  "2": "package.json",
+  "2": "web/package.json",
   "3": "Dotnet Project Dependencies",
   "4": "Architecture and Testing Principles",
   "5": ".GetEventsAsync",
@@ -45,5 +45,9 @@
   "43": "openspec-propose/SKILL.md",
   "44": "openspec-sync-specs/SKILL.md",
   "45": "openspec-update-change/SKILL.md",
-  "46": "web_src_index"
+  "46": "web_src_index",
+  "47": "App.tsx",
+  "48": "dependencies",
+  "49": "EventsHubBaseController",
+  "50": "package.json"
 }

@@ -27,7 +27,7 @@ export default function ActivityForm({ closeForm, activity, submitForm }: Props)
             <Typography variant="h5" gutterBottom color="primary">
                 Create Activity
             </Typography>
-            <Box component="form" onClick={handleSubmit} sx={{display:'flex', flexDirection:'column', gap: 3}}>
+            <Box component="form" onSubmit={handleSubmit} sx={{display:'flex', flexDirection:'column', gap: 3}}>
                 <TextField name="title" label="Title" defaultValue={activity?.title} />
                 <TextField name="description" label="Description" multiline rows={3} defaultValue={activity?.description} />
                 <TextField name="category" label="Category" defaultValue={activity?.category} />

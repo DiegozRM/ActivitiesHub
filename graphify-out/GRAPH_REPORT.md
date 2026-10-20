@@ -1,24 +1,24 @@
-# Graph Report - EventsHub  (2026-10-01)
+# Graph Report - EventsHub  (2026-10-20)
 
 ## Corpus Check
-- 72 files · ~57,838 words
+- 78 files · ~69,800 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 11 file(s) not represented in the graph (top: (none) 9, .nswag 1, .css 1)
 
 ## Summary
-- 493 nodes · 625 edges · 47 communities (36 shown, 11 thin omitted)
+- 521 nodes · 664 edges · 51 communities (40 shown, 11 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 19 edges (avg confidence: 0.9)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `9a7bfba3`
+- Built from commit: `c0858958`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - Generated API Clients
 - Backend Layer Dependencies
-- package.json
+- web/package.json
 - Dotnet Project Dependencies
 - Architecture and Testing Principles
 - .GetEventsAsync
@@ -58,6 +58,10 @@
 - React Activity Types
 - Favicon Vector Asset
 - web_src_index
+- App.tsx
+- dependencies
+- EventsHubBaseController
+- package.json
 
 ## God Nodes (most connected - your core abstractions)
 1. `Event` - 25 edges
@@ -67,9 +71,9 @@
 5. `AppDbContext` - 13 edges
 6. `EventsHub.Persistence` - 12 edges
 7. `EventsHub.Domain` - 9 edges
-8. `Handler` - 8 edges
-9. `EventsController` - 8 edges
-10. `Local baseUrl https://localhost:5001/api/v1` - 7 edges
+8. `EventsController` - 8 edges
+9. `Handler` - 8 edges
+10. `@mui/material` - 8 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `Post commit hooks` --semantically_similar_to--> `Post commit hook`  [INFERRED] [semantically similar]
@@ -86,15 +90,15 @@
 ## Import Cycles
 - None detected.
 
-## Communities (47 total, 11 thin omitted)
+## Communities (51 total, 11 thin omitted)
 
 ### Community 1 - "Backend Layer Dependencies"
 Cohesion: 0.07
 Nodes (35): automapper, EventsHub.Domain, EventsHub.Persistence.Migrations, EventsHub.Application.Events.Queries, EventsHub.Api.Controllers, EventsHub.Application.Events.Commands, EventsHub.UnitTests, EventsHub.Persistence (+27 more)
 
-### Community 2 - "package.json"
-Cohesion: 0.05
-Nodes (46): axios, @babel/core, babel-plugin-react-compiler, @emotion/react, @emotion/styled, eslint, @eslint/js, eslint-plugin-react-hooks (+38 more)
+### Community 2 - "web/package.json"
+Cohesion: 0.08
+Nodes (30): @babel/core, babel-plugin-react-compiler, @emotion/react, @emotion/styled, eslint, @eslint/js, eslint-plugin-react-hooks, eslint-plugin-react-refresh (+22 more)
 
 ### Community 3 - "Dotnet Project Dependencies"
 Cohesion: 0.07
@@ -105,8 +109,8 @@ Cohesion: 0.08
 Nodes (31): Bruno integration tests, EventsHub.Api, EventsHub.Application, EventsHub.Domain, EventsHub.Persistence, NUnit tests, React TypeScript frontend, Repository guidelines (+23 more)
 
 ### Community 5 - ".GetEventsAsync"
-Cohesion: 0.10
-Nodes (23): ActionResult, ControllerBase, HttpDelete, HttpPost, HttpPut, IEnumerable, IMediator, NotFoundObjectResult (+15 more)
+Cohesion: 0.16
+Nodes (15): ActionResult, HttpDelete, HttpPost, HttpPut, NotFoundObjectResult, ProducesResponseType, SetUp, CancellationToken (+7 more)
 
 ### Community 6 - "Application TypeScript Configuration"
 Cohesion: 0.10
@@ -232,25 +236,41 @@ Nodes (4): Cross repository graph merge, Graph merging, Repository cloning, Repo
 Cohesion: 0.50
 Nodes (4): Audio transcription, Domain prompt, Media transcription, Whisper
 
+### Community 47 - "App.tsx"
+Cohesion: 0.11
+Nodes (22): axios, @fontsource/roboto, @mui/icons-material, @mui/material, react, react-dom, ref_tanstack_react_query, ref_tanstack_react_query_devtools (+14 more)
+
+### Community 48 - "dependencies"
+Cohesion: 0.18
+Nodes (11): dependencies, axios, @emotion/react, @emotion/styled, @fontsource/roboto, @mui/icons-material, @mui/material, react (+3 more)
+
+### Community 49 - "EventsHubBaseController"
+Cohesion: 0.22
+Nodes (8): ControllerBase, IEnumerable, IMediator, EventsHubBaseController, Mediator, HttpGet, WeatherForecastController, WeatherForecast
+
+### Community 50 - "package.json"
+Cohesion: 0.33
+Nodes (5): dependencies, @tanstack/react-query, @tanstack/react-query-devtools, @tanstack/react-query, @tanstack/react-query-devtools
+
 ## Knowledge Gaps
-- **230 isolated node(s):** `Activity`, `EventsHub.UnitTests`, `EventsHub.UnitTests.Controllers`, `Category`, `City` (+225 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 285 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **245 isolated node(s):** `@tanstack/react-query`, `@tanstack/react-query`, `@tanstack/react-query-devtools`, `@tanstack/react-query-devtools`, `Mediator` (+240 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 301 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Event` connect `Event Domain Model` to `Database Context`, `.GetEventsAsync`, `Event List Query`, `Event Editing Handler`, `Event Details Query`, `Event Command Contracts`?**
-  _High betweenness centrality (0.035) - this node is a cross-community bridge._
+  _High betweenness centrality (0.032) - this node is a cross-community bridge._
 - **Why does `AppDbContext` connect `Database Context` to `Backend Layer Dependencies`, `Event Domain Model`, `Event Command Handlers`, `Database Seeding and Fixtures`, `Event List Query`, `Event Editing Handler`, `Event Details Query`?**
-  _High betweenness centrality (0.030) - this node is a cross-community bridge._
-- **Why does `EventsController` connect `.GetEventsAsync` to `Backend Layer Dependencies`?**
-  _High betweenness centrality (0.017) - this node is a cross-community bridge._
-- **What connects `Activity`, `EventsHub.UnitTests`, `EventsHub.UnitTests.Controllers` to the rest of the system?**
-  _230 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+- **Why does `EventsController` connect `.GetEventsAsync` to `Backend Layer Dependencies`, `EventsHubBaseController`?**
+  _High betweenness centrality (0.015) - this node is a cross-community bridge._
+- **What connects `@tanstack/react-query`, `@tanstack/react-query`, `@tanstack/react-query-devtools` to the rest of the system?**
+  _245 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Backend Layer Dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.06948051948051948 - nodes in this community are weakly interconnected._
-- **Should `package.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.05203619909502263 - nodes in this community are weakly interconnected._
+- **Should `web/package.json` be split into smaller, more focused modules?**
+  _Cohesion score 0.07575757575757576 - nodes in this community are weakly interconnected._
 - **Should `Dotnet Project Dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.07386363636363637 - nodes in this community are weakly interconnected._
