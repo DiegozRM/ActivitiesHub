@@ -6,10 +6,10 @@
     "semantic_hash": "5ebef3dd159986e465ab65e4014107ec"
   },
   ".config/dotnet-tools.json": {
-    "mtime": 1792504054.9008791,
-    "seen": 1792507164.4834487,
-    "ast_hash": "f8d2497b2d51e9ba9b4bbd5fda9d0bd0",
-    "semantic_hash": "f8d2497b2d51e9ba9b4bbd5fda9d0bd0"
+    "mtime": 1792589034.7894027,
+    "seen": 1792589104.2713175,
+    "ast_hash": "d6399a1332b41ec7f7b831b9a27aefd2",
+    "semantic_hash": ""
   },
   ".vscode/settings.json": {
     "mtime": 1792506269.1249666,
@@ -324,10 +324,10 @@
     "semantic_hash": "c4e5cef3c65252ddc53ba1d3e8c0a122"
   },
   "README.md": {
-    "mtime": 1792504054.9278193,
-    "seen": 1792507164.4835958,
-    "ast_hash": "42d2b48b14b3559917eeb2309df0512d",
-    "semantic_hash": "42d2b48b14b3559917eeb2309df0512d"
+    "mtime": 1792589213.0438702,
+    "seen": 1792675172.7559392,
+    "ast_hash": "4cf52a333033a5e97ceade9bf2d85b51",
+    "semantic_hash": ""
   },
   "docs/OpenApi.md": {
     "mtime": 1792504054.9298327,
@@ -468,9 +468,9 @@
     "semantic_hash": "21c7473c592c67dc87223d49892c8f0a"
   },
   "web/src/app/layout/App.tsx": {
-    "mtime": 1792507122.5756783,
-    "seen": 1792507164.4835405,
-    "ast_hash": "fbc5e95adbd0b15c6b2e629bd46905ef",
+    "mtime": 1792674964.4666574,
+    "seen": 1792675172.7558641,
+    "ast_hash": "0ab833edb87066aaf44eee6613f97045",
     "semantic_hash": ""
   },
   ".agents/skills/openspec-apply-change/SKILL.md": {
@@ -528,21 +528,21 @@
     "semantic_hash": ""
   },
   "web/src/features/activities/dashboard/ActivityCard.tsx": {
-    "mtime": 1792506269.2425518,
-    "seen": 1792507164.4835446,
-    "ast_hash": "550135a7daa591d00aa4d1780b828ae8",
+    "mtime": 1792675163.7549663,
+    "seen": 1792675172.755869,
+    "ast_hash": "26e10d6e4e2f7fd592b15ee92dbfa4de",
     "semantic_hash": ""
   },
   "web/src/features/activities/dashboard/ActivityDashboard.tsx": {
-    "mtime": 1792506269.2425518,
-    "seen": 1792507164.4835463,
-    "ast_hash": "4d5806dc5ffa324d3497aa229c644b00",
+    "mtime": 1792675163.3219779,
+    "seen": 1792675172.7558713,
+    "ast_hash": "4fc69a6dee684c09c957036e71160b11",
     "semantic_hash": ""
   },
   "web/src/features/activities/dashboard/ActivityList.tsx": {
-    "mtime": 1792506269.2451506,
-    "seen": 1792507164.4835482,
-    "ast_hash": "c7a8980a4ebda7479f1ed6c06746cb6b",
+    "mtime": 1792675163.5495698,
+    "seen": 1792675172.7558732,
+    "ast_hash": "da4ba75ea95746ad7c4fd656b1a782e4",
     "semantic_hash": ""
   },
   "web/src/features/activities/details/ActivityDetails.tsx": {
@@ -567,6 +567,30 @@
     "mtime": 1792506269.2317374,
     "seen": 1792507164.4836524,
     "ast_hash": "9b86ea560c19cfd4f867c54daa5579de",
+    "semantic_hash": ""
+  },
+  ".husky/commit-msg": {
+    "mtime": 1792589137.6451943,
+    "seen": 1792675172.7557566,
+    "ast_hash": "b626c971dd13d6757b93991fdc8dc11a",
+    "semantic_hash": ""
+  },
+  ".husky/pre-commit": {
+    "mtime": 1792589091.2918196,
+    "seen": 1792589104.2713308,
+    "ast_hash": "4880e3170f8cd596e86938d3dc5268ca",
+    "semantic_hash": ""
+  },
+  ".husky/task-runner.json": {
+    "mtime": 1792589212.758751,
+    "seen": 1792675172.7557635,
+    "ast_hash": "24596938dc4cebb2ac5f119df65f81f1",
+    "semantic_hash": ""
+  },
+  "web/src/lib/hooks/useActivities.ts": {
+    "mtime": 1792674837.71361,
+    "seen": 1792675172.7558806,
+    "ast_hash": "f8961ab13b5901275e61b5398dd3d139",
     "semantic_hash": ""
   }
 }

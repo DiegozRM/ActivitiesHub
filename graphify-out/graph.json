@@ -917,7 +917,7 @@
       "file_type": "code",
       "norm_label": "app()",
       "source_file": "web/src/app/layout/App.tsx",
-      "source_location": "L8"
+      "source_location": "L7"
     },
     {
       "id": "web_src_app_layout_navbar_navbar",
@@ -941,7 +941,7 @@
       "file_type": "code",
       "norm_label": "activitycard()",
       "source_file": "web/src/features/activities/dashboard/ActivityCard.tsx",
-      "source_location": "L8"
+      "source_location": "L9"
     },
     {
       "id": "web_src_features_activities_dashboard_activitylist_activitylist",
@@ -953,7 +953,7 @@
       "file_type": "code",
       "norm_label": "activitylist()",
       "source_file": "web/src/features/activities/dashboard/ActivityList.tsx",
-      "source_location": "L9"
+      "source_location": "L10"
     },
     {
       "id": "web_src_features_activities_details_activitydetails_activitydetail",
@@ -978,6 +978,18 @@
       "norm_label": "activityform()",
       "source_file": "web/src/features/form/ActivityForm.tsx",
       "source_location": "L9"
+    },
+    {
+      "id": "web_src_lib_hooks_useactivities_useactivities",
+      "label": "useActivities()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "useactivities()",
+      "source_file": "web/src/lib/hooks/useActivities.ts",
+      "source_location": "L4"
     },
     {
       "id": "src_eventshub_api_controllers_weatherforecastcontroller_eventshub_api_controllers_weatherforecastcontroller_get",
@@ -2357,6 +2369,127 @@
       "source_location": "L1"
     },
     {
+      "id": "web_package_dependencies",
+      "label": "dependencies",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "web/package.json",
+      "file_type": "code",
+      "norm_label": "dependencies",
+      "source_file": "web/package.json",
+      "source_location": "L12"
+    },
+    {
+      "id": "web_package_dependencies_axios",
+      "label": "axios",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "web/package.json",
+      "file_type": "code",
+      "norm_label": "axios",
+      "source_file": "web/package.json",
+      "source_location": "L20"
+    },
+    {
+      "id": "web_package_dependencies_emotion_react",
+      "label": "@emotion/react",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "web/package.json",
+      "file_type": "code",
+      "norm_label": "@emotion/react",
+      "source_file": "web/package.json",
+      "source_location": "L13"
+    },
+    {
+      "id": "web_package_dependencies_emotion_styled",
+      "label": "@emotion/styled",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "web/package.json",
+      "file_type": "code",
+      "norm_label": "@emotion/styled",
+      "source_file": "web/package.json",
+      "source_location": "L14"
+    },
+    {
+      "id": "web_package_dependencies_fontsource_roboto",
+      "label": "@fontsource/roboto",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "web/package.json",
+      "file_type": "code",
+      "norm_label": "@fontsource/roboto",
+      "source_file": "web/package.json",
+      "source_location": "L15"
+    },
+    {
+      "id": "web_package_dependencies_mui_icons_material",
+      "label": "@mui/icons-material",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "web/package.json",
+      "file_type": "code",
+      "norm_label": "@mui/icons-material",
+      "source_file": "web/package.json",
+      "source_location": "L16"
+    },
+    {
+      "id": "web_package_dependencies_mui_material",
+      "label": "@mui/material",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "web/package.json",
+      "file_type": "code",
+      "norm_label": "@mui/material",
+      "source_file": "web/package.json",
+      "source_location": "L17"
+    },
+    {
+      "id": "web_package_dependencies_react",
+      "label": "react",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "web/package.json",
+      "file_type": "code",
+      "norm_label": "react",
+      "source_file": "web/package.json",
+      "source_location": "L21"
+    },
+    {
+      "id": "web_package_dependencies_react_dom",
+      "label": "react-dom",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "web/package.json",
+      "file_type": "code",
+      "norm_label": "react-dom",
+      "source_file": "web/package.json",
+      "source_location": "L22"
+    },
+    {
+      "id": "web_package_dependencies_tanstack_react_query",
+      "label": "@tanstack/react-query",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "web/package.json",
+      "file_type": "code",
+      "norm_label": "@tanstack/react-query",
+      "source_file": "web/package.json",
+      "source_location": "L18"
+    },
+    {
+      "id": "web_package_dependencies_tanstack_react_query_devtools",
+      "label": "@tanstack/react-query-devtools",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "web/package.json",
+      "file_type": "code",
+      "norm_label": "@tanstack/react-query-devtools",
+      "source_file": "web/package.json",
+      "source_location": "L19"
+    },
+    {
       "id": "web_package_name",
       "label": "name",
       "_origin": "ast",
@@ -3530,6 +3663,17 @@
       "source_location": "L1"
     },
     {
+      "id": "web_src_lib_hooks_useactivities",
+      "label": "useActivities.ts",
+      "_origin": "ast",
+      "community": 47,
+      "community_name": "App.tsx",
+      "file_type": "code",
+      "norm_label": "useactivities.ts",
+      "source_file": "web/src/lib/hooks/useActivities.ts",
+      "source_location": "L1"
+    },
+    {
       "id": "web_src_main",
       "label": "main.tsx",
       "_origin": "ast",
@@ -3616,127 +3760,6 @@
       "norm_label": "react-dom",
       "source_file": "web/package.json",
       "source_location": "L22"
-    },
-    {
-      "id": "web_package_dependencies",
-      "label": "dependencies",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "dependencies",
-      "source_file": "web/package.json",
-      "source_location": "L12"
-    },
-    {
-      "id": "web_package_dependencies_axios",
-      "label": "axios",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "axios",
-      "source_file": "web/package.json",
-      "source_location": "L20"
-    },
-    {
-      "id": "web_package_dependencies_emotion_react",
-      "label": "@emotion/react",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "@emotion/react",
-      "source_file": "web/package.json",
-      "source_location": "L13"
-    },
-    {
-      "id": "web_package_dependencies_emotion_styled",
-      "label": "@emotion/styled",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "@emotion/styled",
-      "source_file": "web/package.json",
-      "source_location": "L14"
-    },
-    {
-      "id": "web_package_dependencies_fontsource_roboto",
-      "label": "@fontsource/roboto",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "@fontsource/roboto",
-      "source_file": "web/package.json",
-      "source_location": "L15"
-    },
-    {
-      "id": "web_package_dependencies_mui_icons_material",
-      "label": "@mui/icons-material",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "@mui/icons-material",
-      "source_file": "web/package.json",
-      "source_location": "L16"
-    },
-    {
-      "id": "web_package_dependencies_mui_material",
-      "label": "@mui/material",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "@mui/material",
-      "source_file": "web/package.json",
-      "source_location": "L17"
-    },
-    {
-      "id": "web_package_dependencies_react",
-      "label": "react",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "react",
-      "source_file": "web/package.json",
-      "source_location": "L21"
-    },
-    {
-      "id": "web_package_dependencies_react_dom",
-      "label": "react-dom",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "react-dom",
-      "source_file": "web/package.json",
-      "source_location": "L22"
-    },
-    {
-      "id": "web_package_dependencies_tanstack_react_query",
-      "label": "@tanstack/react-query",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "@tanstack/react-query",
-      "source_file": "web/package.json",
-      "source_location": "L18"
-    },
-    {
-      "id": "web_package_dependencies_tanstack_react_query_devtools",
-      "label": "@tanstack/react-query-devtools",
-      "_origin": "ast",
-      "community": 48,
-      "community_name": "dependencies",
-      "file_type": "code",
-      "norm_label": "@tanstack/react-query-devtools",
-      "source_file": "web/package.json",
-      "source_location": "L19"
     },
     {
       "id": "controllerbase",
@@ -4018,6 +4041,99 @@
       "norm_label": "@tanstack/react-query-devtools",
       "source_file": "package.json",
       "source_location": "L4"
+    },
+    {
+      "id": "husky_task_runner",
+      "label": "task-runner.json",
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "task-runner.json",
+      "file_type": "code",
+      "norm_label": "task-runner.json",
+      "source_file": ".husky/task-runner.json",
+      "source_location": "L1"
+    },
+    {
+      "id": "husky_task_runner_schema",
+      "label": "$schema",
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "task-runner.json",
+      "file_type": "code",
+      "norm_label": "$schema",
+      "source_file": ".husky/task-runner.json",
+      "source_location": "L2"
+    },
+    {
+      "id": "husky_task_runner_tasks",
+      "label": "tasks",
+      "_origin": "ast",
+      "community": 51,
+      "community_name": "task-runner.json",
+      "file_type": "code",
+      "norm_label": "tasks",
+      "source_file": ".husky/task-runner.json",
+      "source_location": "L3"
+    },
+    {
+      "id": "husky_commit_msg",
+      "label": "commit-msg",
+      "_origin": "ast",
+      "community": 52,
+      "community_name": "commit-msg",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "commit-msg",
+      "source_file": ".husky/commit-msg",
+      "source_location": "L1"
+    },
+    {
+      "id": "husky_commit_msg__entry",
+      "label": "commit-msg script",
+      "_origin": "ast",
+      "community": 52,
+      "community_name": "commit-msg",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "commit-msg script",
+      "source_file": ".husky/commit-msg",
+      "source_location": "L1"
+    },
+    {
+      "id": "husky_pre_commit",
+      "label": "pre-commit",
+      "_origin": "ast",
+      "community": 53,
+      "community_name": "pre-commit",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "file"
+      },
+      "norm_label": "pre-commit",
+      "source_file": ".husky/pre-commit",
+      "source_location": "L1"
+    },
+    {
+      "id": "husky_pre_commit__entry",
+      "label": "pre-commit script",
+      "_origin": "ast",
+      "community": 53,
+      "community_name": "pre-commit",
+      "file_type": "code",
+      "metadata": {
+        "language": "bash",
+        "kind": "bash_entrypoint"
+      },
+      "norm_label": "pre-commit script",
+      "source_file": ".husky/pre-commit",
+      "source_location": "L1"
     },
     {
       "id": "web_tsconfig_app",
@@ -7112,20 +7228,9 @@
       "type": "external"
     },
     {
-      "id": "web_src_app_layout_styles",
-      "label": "web_src_app_layout_styles",
-      "_origin": "semantic",
-      "community": 47,
-      "community_name": "App.tsx",
-      "external": true,
-      "file_type": "concept",
-      "norm_label": "web_src_app_layout_styles",
-      "source_file": "",
-      "type": "external"
-    },
-    {
       "id": "ref_tanstack_react_query",
       "label": "ref_tanstack_react_query",
+      "_origin": "semantic",
       "community": 47,
       "community_name": "App.tsx",
       "external": true,
@@ -7137,11 +7242,24 @@
     {
       "id": "ref_tanstack_react_query_devtools",
       "label": "ref_tanstack_react_query_devtools",
+      "_origin": "semantic",
       "community": 47,
       "community_name": "App.tsx",
       "external": true,
       "file_type": "concept",
       "norm_label": "ref_tanstack_react_query_devtools",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "web_src_app_layout_styles",
+      "label": "web_src_app_layout_styles",
+      "_origin": "semantic",
+      "community": 47,
+      "community_name": "App.tsx",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "web_src_app_layout_styles",
       "source_file": "",
       "type": "external"
     }
@@ -7416,6 +7534,18 @@
     },
     {
       "source": "web_src_app_layout_app_app",
+      "target": "web_src_lib_hooks_useactivities_useactivities",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "web/src/app/layout/App.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "web_src_app_layout_app_app",
       "target": "web_src_app_layout_navbar_navbar",
       "relation": "calls",
       "_origin": "ast",
@@ -7423,7 +7553,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "web/src/app/layout/App.tsx",
-      "source_location": "L66",
+      "source_location": "L54",
       "weight": 1.0
     },
     {
@@ -7435,7 +7565,7 @@
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "web/src/features/activities/dashboard/ActivityList.tsx",
-      "source_location": "L13",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -10033,6 +10163,18 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "web/src/app/layout/App.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "web_src_app_layout_app",
+      "target": "web_src_lib_hooks_useactivities_useactivities",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "web/src/app/layout/App.tsx",
       "source_location": "L4",
       "weight": 1.0
     },
@@ -10182,7 +10324,7 @@
     },
     {
       "source": "web_src_app_layout_app",
-      "target": "ref_axios",
+      "target": "ref_react",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -10194,7 +10336,7 @@
     },
     {
       "source": "web_src_app_layout_app",
-      "target": "ref_react",
+      "target": "web_src_app_layout_navbar",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -10206,7 +10348,7 @@
     },
     {
       "source": "web_src_app_layout_app",
-      "target": "web_src_app_layout_navbar",
+      "target": "web_src_lib_hooks_useactivities",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -10218,18 +10360,6 @@
     },
     {
       "source": "web_src_app_layout_app",
-      "target": "ref_tanstack_react_query",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "web/src/app/layout/App.tsx",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "web_src_app_layout_app",
       "target": "web_src_features_activities_dashboard_activitydashboard",
       "relation": "imports_from",
       "_origin": "ast",
@@ -10237,7 +10367,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "web/src/app/layout/App.tsx",
-      "source_location": "L6",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -10383,6 +10513,30 @@
       "source_file": "web/src/features/form/ActivityForm.tsx",
       "source_location": "L2",
       "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "web_src_lib_hooks_useactivities",
+      "target": "ref_tanstack_react_query",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "web/src/lib/hooks/useActivities.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "web_src_lib_hooks_useactivities",
+      "target": "ref_axios",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "web/src/lib/hooks/useActivities.ts",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -11459,6 +11613,50 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "EventsHub.slnx",
+      "weight": 1.0
+    },
+    {
+      "source": "husky_commit_msg",
+      "target": "husky_commit_msg__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".husky/commit-msg",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "husky_pre_commit",
+      "target": "husky_pre_commit__entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".husky/pre-commit",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "husky_task_runner",
+      "target": "husky_task_runner_schema",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".husky/task-runner.json",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "husky_task_runner",
+      "target": "husky_task_runner_tasks",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": ".husky/task-runner.json",
+      "source_location": "L3",
       "weight": 1.0
     },
     {
@@ -12613,7 +12811,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/src/app/layout/App.tsx",
-      "source_location": "L8",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
@@ -12657,7 +12855,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "web/src/features/activities/dashboard/ActivityCard.tsx",
-      "source_location": "L8",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -12673,6 +12871,17 @@
     },
     {
       "source": "web_src_features_activities_dashboard_activitylist",
+      "target": "web_src_features_activities_dashboard_activitylist_activitylist",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "web/src/features/activities/dashboard/ActivityList.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "web_src_features_activities_dashboard_activitylist",
       "target": "web_src_features_activities_dashboard_activitylist_props",
       "relation": "contains",
       "_origin": "ast",
@@ -12680,17 +12889,6 @@
       "confidence_score": 1.0,
       "source_file": "web/src/features/activities/dashboard/ActivityList.tsx",
       "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "web_src_features_activities_dashboard_activitylist",
-      "target": "web_src_features_activities_dashboard_activitylist_activitylist",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "web/src/features/activities/dashboard/ActivityList.tsx",
-      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -12735,6 +12933,17 @@
       "confidence_score": 1.0,
       "source_file": "web/src/features/form/ActivityForm.tsx",
       "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "web_src_lib_hooks_useactivities",
+      "target": "web_src_lib_hooks_useactivities_useactivities",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "web/src/lib/hooks/useActivities.ts",
+      "source_location": "L4",
       "weight": 1.0
     },
     {
@@ -15415,5 +15624,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c0858958e25bd83d40d6db20033dc97a2d063a9b"
+  "built_at_commit": "9ebf0f234de1fa910a035478b08c8ff25cc3732b"
 }

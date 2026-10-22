@@ -47,7 +47,9 @@
   "45": "openspec-update-change/SKILL.md",
   "46": "web_src_index",
   "47": "App.tsx",
-  "48": "dependencies",
   "49": "EventsHubBaseController",
-  "50": "package.json"
+  "50": "package.json",
+  "51": "task-runner.json",
+  "52": "commit-msg",
+  "53": "pre-commit"
 }

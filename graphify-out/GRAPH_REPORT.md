@@ -1,17 +1,17 @@
-# Graph Report - EventsHub  (2026-10-20)
+# Graph Report - EventsHub  (2026-10-22)
 
 ## Corpus Check
-- 78 files · ~69,800 words
+- 82 files · ~70,146 words
 - Verdict: corpus is large enough that graph structure adds value.
 - Unclassified: 11 file(s) not represented in the graph (top: (none) 9, .nswag 1, .css 1)
 
 ## Summary
-- 521 nodes · 664 edges · 51 communities (40 shown, 11 thin omitted)
+- 530 nodes · 672 edges · 53 communities (39 shown, 14 thin omitted)
 - Extraction: 97% EXTRACTED · 3% INFERRED · 0% AMBIGUOUS · INFERRED: 19 edges (avg confidence: 0.9)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `c0858958`
+- Built from commit: `9ebf0f23`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -59,9 +59,11 @@
 - Favicon Vector Asset
 - web_src_index
 - App.tsx
-- dependencies
 - EventsHubBaseController
 - package.json
+- task-runner.json
+- commit-msg
+- pre-commit
 
 ## God Nodes (most connected - your core abstractions)
 1. `Event` - 25 edges
@@ -90,15 +92,15 @@
 ## Import Cycles
 - None detected.
 
-## Communities (51 total, 11 thin omitted)
+## Communities (53 total, 14 thin omitted)
 
 ### Community 1 - "Backend Layer Dependencies"
 Cohesion: 0.07
 Nodes (35): automapper, EventsHub.Domain, EventsHub.Persistence.Migrations, EventsHub.Application.Events.Queries, EventsHub.Api.Controllers, EventsHub.Application.Events.Commands, EventsHub.UnitTests, EventsHub.Persistence (+27 more)
 
 ### Community 2 - "web/package.json"
-Cohesion: 0.08
-Nodes (30): @babel/core, babel-plugin-react-compiler, @emotion/react, @emotion/styled, eslint, @eslint/js, eslint-plugin-react-hooks, eslint-plugin-react-refresh (+22 more)
+Cohesion: 0.05
+Nodes (41): @babel/core, babel-plugin-react-compiler, @emotion/react, @emotion/styled, eslint, @eslint/js, eslint-plugin-react-hooks, eslint-plugin-react-refresh (+33 more)
 
 ### Community 3 - "Dotnet Project Dependencies"
 Cohesion: 0.07
@@ -237,12 +239,8 @@ Cohesion: 0.50
 Nodes (4): Audio transcription, Domain prompt, Media transcription, Whisper
 
 ### Community 47 - "App.tsx"
-Cohesion: 0.11
-Nodes (22): axios, @fontsource/roboto, @mui/icons-material, @mui/material, react, react-dom, ref_tanstack_react_query, ref_tanstack_react_query_devtools (+14 more)
-
-### Community 48 - "dependencies"
-Cohesion: 0.18
-Nodes (11): dependencies, axios, @emotion/react, @emotion/styled, @fontsource/roboto, @mui/icons-material, @mui/material, react (+3 more)
+Cohesion: 0.10
+Nodes (23): axios, @fontsource/roboto, @mui/icons-material, @mui/material, react, react-dom, ref_tanstack_react_query, ref_tanstack_react_query_devtools (+15 more)
 
 ### Community 49 - "EventsHubBaseController"
 Cohesion: 0.22
@@ -253,24 +251,24 @@ Cohesion: 0.33
 Nodes (5): dependencies, @tanstack/react-query, @tanstack/react-query-devtools, @tanstack/react-query, @tanstack/react-query-devtools
 
 ## Knowledge Gaps
-- **245 isolated node(s):** `@tanstack/react-query`, `@tanstack/react-query`, `@tanstack/react-query-devtools`, `@tanstack/react-query-devtools`, `Mediator` (+240 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 301 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **11 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **247 isolated node(s):** `$schema`, `tasks`, `@tanstack/react-query`, `@tanstack/react-query`, `@tanstack/react-query-devtools` (+242 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 307 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **14 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
 - **Why does `Event` connect `Event Domain Model` to `Database Context`, `.GetEventsAsync`, `Event List Query`, `Event Editing Handler`, `Event Details Query`, `Event Command Contracts`?**
-  _High betweenness centrality (0.032) - this node is a cross-community bridge._
+  _High betweenness centrality (0.031) - this node is a cross-community bridge._
 - **Why does `AppDbContext` connect `Database Context` to `Backend Layer Dependencies`, `Event Domain Model`, `Event Command Handlers`, `Database Seeding and Fixtures`, `Event List Query`, `Event Editing Handler`, `Event Details Query`?**
-  _High betweenness centrality (0.027) - this node is a cross-community bridge._
+  _High betweenness centrality (0.026) - this node is a cross-community bridge._
 - **Why does `EventsController` connect `.GetEventsAsync` to `Backend Layer Dependencies`, `EventsHubBaseController`?**
   _High betweenness centrality (0.015) - this node is a cross-community bridge._
-- **What connects `@tanstack/react-query`, `@tanstack/react-query`, `@tanstack/react-query-devtools` to the rest of the system?**
-  _245 weakly-connected nodes found - possible documentation gaps or missing edges._
+- **What connects `$schema`, `tasks`, `@tanstack/react-query` to the rest of the system?**
+  _247 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Backend Layer Dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.06948051948051948 - nodes in this community are weakly interconnected._
 - **Should `web/package.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.07575757575757576 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.05391120507399577 - nodes in this community are weakly interconnected._
 - **Should `Dotnet Project Dependencies` be split into smaller, more focused modules?**
   _Cohesion score 0.07386363636363637 - nodes in this community are weakly interconnected._
