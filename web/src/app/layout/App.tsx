@@ -9,7 +9,7 @@ function App() {
     Activity | undefined
   >(undefined)
   const [editMode, setEditMode] = useState(false)
-  const { activities, isPending } = useActivities();
+  const { activities, isPending } = useActivities()
 
   const handleSelectActivity = (id: string) => {
     setSelectedActivity(activities?.find((x) => x.id === id))
@@ -26,20 +26,6 @@ function App() {
   }
 
   const handleFormClose = () => {
-    setEditMode(false)
-  }
-
-  const handleSubmitForm = (activity: Activity) => {
-    //   if (activity.id) {
-    //     setSelectedActivity(activity)
-    //     setActivities(
-    //       activities.map((act) => (act.id === activity.id ? activity : act)),
-    //     )
-    //   } else {
-    //     const newActivity = { ...activity, id: activities.length.toString() }
-    //     setSelectedActivity(newActivity)
-    //     setActivities([...activities, newActivity])
-    console.log(activity)
     setEditMode(false)
   }
 
@@ -64,7 +50,6 @@ function App() {
             editMode={editMode}
             openForm={handleOpenForm}
             closeForm={handleFormClose}
-            submitForm={handleSubmitForm}
             deleteActivity={handleDeleteActivity}
           />
         )}
