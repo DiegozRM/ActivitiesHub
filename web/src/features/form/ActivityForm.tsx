@@ -1,5 +1,4 @@
 import { Box, Button, Paper, TextField, Typography } from '@mui/material'
-import type { FormEvent } from 'react'
 import { useActivities } from '../../lib/hooks/useActivities'
 
 
@@ -7,35 +6,34 @@ type Props = {
   closeForm: () => void
   activity?: Activity
 }
-export default function ActivityForm({ closeForm, activity }: Props) {
-  const { updateActivity } = useActivities()
 
-  const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
+export default function ActivityForm({ activity, closeForm }: Props) {
+  const { updateActivity, createActivity } = useActivities()
+
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
     const formData = new FormData(event.currentTarget)
+    const data: { [key: string]: FormDataEntryValue } = {}
+    formData.forEach((value, key) => {
+      data[key] = value
+    })
 
     if (activity) {
-      const updatedActivity: Activity = {
-        ...activity,
-        title: formData.get('title')?.toString() ?? activity.title,
-        description:
-          formData.get('description')?.toString() ?? activity.description,
-        category: formData.get('category')?.toString() ?? activity.category,
-        date: formData.get('date')?.toString() ?? activity.date,
-        city: formData.get('city')?.toString() ?? activity.city,
-        venue: formData.get('venue')?.toString() ?? activity.venue,
-      }
-
-      await updateActivity.mutateAsync(updatedActivity)
+      data.id = activity.id
+      await updateActivity.mutateAsync(data as unknown as Activity)
       closeForm()
+    }else {
+      await createActivity.mutateAsync(data as unknown as Activity) 
     }
+    closeForm()
   }
+
 
   return (
     <Paper sx={{ borderRadius: 3, padding: 3 }}>
       <Typography variant="h5" gutterBottom color="primary">
-        Create Activity
+        Create activity
       </Typography>
       <Box
         component="form"
@@ -46,9 +44,9 @@ export default function ActivityForm({ closeForm, activity }: Props) {
         <TextField
           name="description"
           label="Description"
+          defaultValue={activity?.description}
           multiline
           rows={3}
-          defaultValue={activity?.description}
         />
         <TextField
           name="category"
@@ -59,9 +57,10 @@ export default function ActivityForm({ closeForm, activity }: Props) {
           name="date"
           label="Date"
           type="date"
-          defaultValue={activity?.date
-            ? new Date(activity.date).toISOString().split('T')[0]
-            : new Date().toISOString().split('T')[0]
+          defaultValue={
+            activity?.date
+              ? new Date(activity.date).toISOString().split('T')[0]
+              : new Date().toISOString().split('T')[0]
           }
         />
         <TextField name="city" label="City" defaultValue={activity?.city} />
