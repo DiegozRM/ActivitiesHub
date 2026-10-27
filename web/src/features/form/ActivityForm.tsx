@@ -7,28 +7,29 @@ type Props = {
   closeForm: () => void
   activity?: Activity
 }
-export default function ActivityForm({
-  closeForm,
-  activity,
-}: Props) {
+export default function ActivityForm({ closeForm, activity }: Props) {
+  const { updateActivity } = useActivities()
 
-  const {updateActivity} = useActivities();
-  
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
     const formData = new FormData(event.currentTarget)
-    const data: { [key: string]: FormDataEntryValue } = {}
-    formData.forEach((value, key) => {
-      data[key] = value
-    })
 
     if (activity) {
-      data.id = activity.id
-      await updateActivity.mutate(data as unknown as Activity);
+      const updatedActivity: Activity = {
+        ...activity,
+        title: formData.get('title')?.toString() ?? activity.title,
+        description:
+          formData.get('description')?.toString() ?? activity.description,
+        category: formData.get('category')?.toString() ?? activity.category,
+        date: formData.get('date')?.toString() ?? activity.date,
+        city: formData.get('city')?.toString() ?? activity.city,
+        venue: formData.get('venue')?.toString() ?? activity.venue,
+      }
+
+      await updateActivity.mutateAsync(updatedActivity)
       closeForm()
     }
-
   }
 
   return (
@@ -58,7 +59,10 @@ export default function ActivityForm({
           name="date"
           label="Date"
           type="date"
-          defaultValue={activity?.date}
+          defaultValue={activity?.date
+            ? new Date(activity.date).toISOString().split('T')[0]
+            : new Date().toISOString().split('T')[0]
+          }
         />
         <TextField name="city" label="City" defaultValue={activity?.city} />
         <TextField name="venue" label="Venue" defaultValue={activity?.venue} />
@@ -66,9 +70,12 @@ export default function ActivityForm({
           <Button onClick={closeForm} color="inherit">
             Cancel
           </Button>
-          <Button 
-            type="submit" color="success" variant="contained" 
-            loading={updateActivity.isPending}>
+          <Button
+            type="submit"
+            color="success"
+            variant="contained"
+            loading={updateActivity.isPending}
+          >
             Submit
           </Button>
         </Box>
