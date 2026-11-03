@@ -6,46 +6,39 @@ import {
   CardMedia,
   Typography,
 } from '@mui/material'
+import { Link, useNavigate, useParams } from 'react-router'
 import { useActivities } from '../../../lib/hooks/useActivities'
 
+export default function ActivityDetail() {
+  const navigate = useNavigate()
+  const { id } = useParams()
+  const { activity, isLoadingActivity } = useActivities(id);
 
-type Props = {
-  selectedActivity: Activity
-  cancelSelectActivity: () => void
-  openForm: (id: string) => void
-}
-
-export default function ActivityDetail({
-  selectedActivity,
-  cancelSelectActivity,
-  openForm,
-}: Props) {
-
-  const { activities } = useActivities();
-  const activity = activities?.find (act => act.id === selectedActivity.id);
-
-  if (!activity) {
-    return <Typography>Loanding...</Typography>
-  }
+  if (isLoadingActivity) return <Typography>Loadinf...</Typography>
+  if (!activity) return <Typography>Loading...</Typography>
 
   return (
     <Card sx={{ borderRadius: 3 }}>
       <CardMedia
         component="img"
-        src={`/Images/categoryImages/${selectedActivity.category}.jpg`}
+        src={`./images/categoryImages/${activity.category}.jpg`}
       />
       <CardContent>
-        <Typography variant="h5">{selectedActivity.title}</Typography>
+        <Typography variant="h5">{activity.title}</Typography>
         <Typography variant="subtitle1" sx={{ fontWeight: 'light' }}>
-          {selectedActivity.date}
+          {activity.date}
         </Typography>
-        <Typography variant="body1">{selectedActivity.description}</Typography>
+        <Typography variant="body1">{activity.description}</Typography>
       </CardContent>
       <CardActions>
-        <Button color="primary" onClick={() => openForm(selectedActivity.id)}>
+        <Button
+          component={Link}
+          to={`/activities/${activity.id}`}
+          color="primary"
+        >
           Edit
         </Button>
-        <Button onClick={cancelSelectActivity} color="inherit">
+        <Button onClick={() => navigate('/activities')} color="inherit">
           Cancel
         </Button>
       </CardActions>
