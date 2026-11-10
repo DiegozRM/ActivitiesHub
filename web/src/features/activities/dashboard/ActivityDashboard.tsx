@@ -5,7 +5,7 @@ import ActivityFilters from './ActivityFilters'
 
 export default function ActivityDashboard() {
   return (
-    <Grid container spacing={7}>
+    <Grid container spacing={3}>
       <Grid size={9}>
         <ActivityList />
       </Grid>
